@@ -5,5 +5,9 @@ Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/JohnJohansson
-      icon: github
+      icon: fab fa-github
+
+    - title: Link till youtube
+      url: https://youtube.com
+      icon: fab fa-youtube
 ---
