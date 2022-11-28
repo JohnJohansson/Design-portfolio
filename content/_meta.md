@@ -4,7 +4,7 @@ Logo: assets/img/logo.png
 Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
-      url: https://github.com/JohnJohansson
+      url: https://github.com/JohnJohansson/Design-portfolio
       icon: fab fa-github
 
     - title: Link till youtube
