@@ -1,0 +1,20 @@
+{% include 'incl/header.twig' %}
+
+<body>
+	{% include 'incl/nav.twig' %}
+
+	<div class="main" role="main">
+		<div class="tec-wrapper">
+
+			<aside class="tec-side" role="side">
+				{% include 'incl/sidebar.twig' %}
+			</aside>
+
+			<div class="page-content">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+
+	{% include 'incl/footer.twig' %}
+</body></html>
