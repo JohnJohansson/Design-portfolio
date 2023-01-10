@@ -6547,12 +6547,10 @@ pre code {
     margin-bottom: 5%;
   }
   .landingpage .tbox .box-title {
-    background-color: rgb(116, 161, 212);
     height: 50px;
   }
   .landingpage .tbox a {
     text-decoration: none;
-    border-bottom: 2px solid black;
     display: block;
     width: 95%;
     margin: 0 auto;
@@ -6570,6 +6568,10 @@ pre code {
   background-color: bisque;
   width: 60%;
   padding: 2%;
+}
+.main .tec-wrapper .page-content img.small {
+  max-width: 80%;
+  margin-left: 10%;
 }
 .main .tec-wrapper aside {
   width: auto;
@@ -6611,23 +6613,87 @@ pre code {
   border-spacing: 4px;
   border-collapse: separate;
 }
-
-.color-table tr .color-three {
+.color-table tr td {
   height: 50px;
   width: 50px;
-  background-color: #ef0;
 }
-
-.color-table tr .color-two {
-  height: 50px;
-  width: 50px;
-  background-color: #0ef;
+.color-table .color-1 {
+  background-color: #FFFFFF;
 }
-
-.color-table tr .color-one {
-  height: 50px;
-  width: 50px;
-  background-color: #f0e;
+.color-table .color-2 {
+  background-color: #2F2F2F;
+}
+.color-table .color-3 {
+  background-color: #FAE0E6;
+}
+.color-table .color-4 {
+  background-color: #DAF8FF;
+}
+.color-table .color-5 {
+  background-color: #FBF7DE;
+}
+.color-table .color-6 {
+  background-color: #1DBADF;
+}
+.color-table .color-7 {
+  background-color: #6B6B6B;
+}
+.color-table .color-8 {
+  background-color: #1F84C8;
+}
+.color-table .color-9 {
+  background-color: #FFFFFF;
+}
+.color-table .color-10 {
+  background-color: #A0B476;
+}
+.color-table .color-11 {
+  background-color: #F6E66C;
+}
+.color-table .color-12 {
+  background-color: #E8D4DB;
+}
+.color-table .color-13 {
+  background-color: #957D59;
+}
+.color-table .color-14 {
+  background-color: #FCA001;
+}
+.color-table .color-15 {
+  background-color: #A44622;
+}
+.color-table .color-16 {
+  background-color: #F9F6EC;
+}
+.color-table .color-17 {
+  background-color: #201E18;
+}
+.color-table .color-18 {
+  background-color: #DCF1F4;
+}
+.color-table .color-19 {
+  background-color: #F9C2B1;
+}
+.color-table .color-20 {
+  background-color: #F8237F;
+}
+.color-table .color-21 {
+  background-color: #5EBA40;
+}
+.color-table .color-22 {
+  background-color: #D09730;
+}
+.color-table .color-23 {
+  background-color: #230255;
+}
+.color-table .color-24 {
+  background-color: #0082DA;
+}
+.color-table .color-25 {
+  background-color: #FCFFEB;
+}
+.color-table .color-26 {
+  background-color: #818181;
 }
 
 * {

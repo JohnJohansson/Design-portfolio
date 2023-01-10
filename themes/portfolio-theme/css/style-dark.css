@@ -6607,29 +6607,6 @@ pre code {
     font-size: 22px;
   }
 }
-.color-table {
-  border-spacing: 4px;
-  border-collapse: separate;
-}
-
-.color-table tr .color-three {
-  height: 50px;
-  width: 50px;
-  background-color: #ef0;
-}
-
-.color-table tr .color-two {
-  height: 50px;
-  width: 50px;
-  background-color: #0ef;
-}
-
-.color-table tr .color-one {
-  height: 50px;
-  width: 50px;
-  background-color: #f0e;
-}
-
 * {
   color: rgb(27, 27, 27);
   font-family: "Roboto", sans-serif;
@@ -6657,10 +6634,6 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", sans-serif;
-}
-
-.hidden {
-  display: none;
 }
 
 /* changes the size of the small images */
@@ -6696,6 +6669,7 @@ img.small {
 .main {
   width: 88%;
   margin: 0 auto;
+  background-color: #ff0000;
 }
 
 .footer {

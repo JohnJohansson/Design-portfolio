@@ -1,0 +1,118 @@
+// imports fonts
+
+@import "../../shared/fontawesome/scss/fontawesome";
+$fa-font-path: "../../shared/fontawesome/webfonts";
+@import "../../shared/fontawesome/scss/brands";
+@import "../../shared/fontawesome/scss/solid";
+@import "../../shared/fontawesome/scss/regular";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+
+//imports other sass files
+
+@import "../../node_modules/normalize.css/normalize";
+@import "variables";
+
+@import "blockquotes";
+@import "code";
+@import "report";
+@import "technology";
+@import "technologies";
+
+* {
+    color: $font-color;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: $background-color;
+    // Creates a basline for text
+    line-height: 1.4;
+}
+
+h1 {
+    // Creates a basline for text
+    font-size: 2.8em;
+    margin-bottom: 3.5rem;
+}
+
+p {
+    // Creates a basline for text
+    font-size: 1.25em;
+    margin-bottom: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* changes the size of the small images */
+img.small {
+    max-width: 40%;
+}
+
+.social {
+    font-size: 60px;
+
+    a {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .fa-youtube {
+        color: #ff0000;
+    }
+}
+
+.header {
+    background: $header-color;
+
+    .site-header {
+        display: flex;
+        gap: 30px;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            padding: 5%;
+        }
+    }
+}
+
+.main {
+    width: 88%;
+    margin: 0 auto;
+    background-color: #ff0000;
+}
+
+
+.footer {
+    background-color: $footer-color;
+
+    p {
+        color: antiquewhite;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 3vw;
+    }
+
+    .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .logo {
+        img {
+            width: 15vw;
+        }
+    }
+}
