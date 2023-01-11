@@ -1,0 +1,38 @@
+/* report.scss */
+.landingpage {
+    display: grid;
+    gap: 1em 1em;
+
+    h1 {
+        //makes the h1 stretch over 3 grid colums
+        grid-column: span 3;
+        justify-self: center;
+    }
+
+    .kmom-box.project {
+        grid-column: span 3;
+    }
+}
+
+.main .tec-wrapper .page-content .wrapper {
+    width: 100%;
+    text-align: center;
+
+    .spreedsheat {
+        width: 475px;
+        min-height: 430px;
+    }
+}
+
+
+
+@media (max-width: 580px) {
+    .main .tec-wrapper .page-content .wrapper {
+        width: 100%;
+        text-align: left;
+    
+        .spreedsheat {
+            width: 98%;
+        }
+    }
+}

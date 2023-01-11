@@ -1,0 +1,369 @@
+// imports fonts
+
+@import "../../shared/fontawesome/scss/fontawesome";
+$fa-font-path: "../../shared/fontawesome/webfonts";
+@import "../../shared/fontawesome/scss/brands";
+@import "../../shared/fontawesome/scss/solid";
+@import "../../shared/fontawesome/scss/regular";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+//imports other sass files
+
+@import "../../node_modules/normalize.css/normalize";
+@import "variables";
+
+@import "blockquotes";
+@import "code";
+@import "report";
+@import "technology";
+@import "technologies";
+@import "analysis-colors";
+@import "gallery";
+
+* {
+    color: $font-color-dark;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: $background-color-dark;
+    // Creates a basline for text
+    line-height: 1.4;
+
+    .logo {
+        img {
+            width: 15vw;
+            filter: brightness(.7) contrast(1.2);
+        }
+    }
+}
+
+h1 {
+    // Creates a basline for text
+    font-size: 2.8em;
+    margin-bottom: 3.5rem;
+    filter: brightness(.8) contrast(1.2);
+}
+
+p {
+    // Creates a basline for text
+    font-size: 1.25em;
+    margin-bottom: 1.75rem;
+    filter: brightness(.8) contrast(1.2);
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    filter: brightness(.8) contrast(1.2);
+}
+
+//hides the mobile menu when toggled
+.hidden {
+    display: none;
+}
+
+/* changes the size of the small images */
+img.small {
+    max-width: 40%;
+    filter: brightness(.8) contrast(1.1);
+}
+
+.nav #nav ul li a {
+    color: $font-color-dark;
+}
+
+.social {
+    font-size: 60px;
+
+    a {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .fa-youtube {
+        color: $youtube;
+        filter: brightness(.8) contrast(1.1);
+    }
+}
+
+.header {
+    background: $header-color-dark;
+
+    .site-header {
+        display: flex;
+        gap: 30px;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            padding: 5%;
+        }
+    }
+}
+
+.main {
+    width: 88%;
+    margin: 0 auto;
+}
+
+
+.footer {
+    background-color: $footer-color-dark;
+
+    i {
+        filter: brightness(.8) contrast(1.2);
+    }
+
+    p {
+        color: $antiquewhite-dark;
+        filter: brightness(.8) contrast(1.2);
+    }
+}
+
+//Docs page ----------
+code {
+    color: $font-color;
+}
+
+
+// Technology page ---------
+.landingpage {
+
+
+    .tbox {
+        .box-title {
+            background-color: $box-title-dark;
+        }
+
+        a {
+            border-bottom: 2px solid $black-dark;
+        }
+    }
+
+    .tbox.css {
+        background-color: $css-dark;
+    }
+
+    .tbox.html {
+        background-color: $html-dark;
+    }
+
+    .tbox.js {
+        background-color: $js-dark;
+    }
+
+    .tbox.php {
+        background-color: $php-dark;
+    }
+
+    .tbox.python {
+        background-color: $python-dark;
+    }
+
+    .tbox.git {
+        background-color: $git-dark;
+    }
+
+    .tbox.sqlite {
+        background-color: $sqlite-dark;
+
+    }
+}
+
+// Technologyies page ---------
+
+.main {
+    .tec-wrapper {
+
+        .page-content {
+            background-color: $content-dark;
+
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                background-color: $content-background-dark;
+                color: $content-heading-dark;
+                padding: 1%;
+            }
+
+            p {
+                color: $content-text-dark;
+
+                a {
+                    color: $content-link-color-dark;
+                }
+
+                b {
+                    color: $content-text-dark;
+                }
+
+            }
+        }
+
+        aside {
+
+            .box-title {
+
+                a {
+                    color: $link-color-dark;
+                }
+
+                a:hover {
+                    color: $link-hover-dark;
+                }
+            }
+        }
+    }
+
+}
+
+// Lost code---------------------------------
+
+/* changes the size of the small images */
+img.small {
+    max-width: 40%;
+  }
+  
+  .header .site-header .logo {
+    padding: 1em 1em 1em 0;
+  }
+  .header .site-header .logo img {
+    width: 7vw;
+  }
+  .header {
+
+    position: relative;
+  }
+  .header .title {
+    width: 30%;
+  }
+  .header .title h1 {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .site-header {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 150px;
+  }
+
+  .main {
+    width: 88%;
+    margin: 0 auto;
+    min-height: 700px;
+  }
+  .main h1 {
+    text-align: center;
+  }
+  .main img.small {
+    max-width: 100%;
+  }
+  .main .main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10%;
+    grid-row-gap: 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main .main-wrapper .b1 {
+    background-color: #161616;
+    p{
+        color: $font-color-dark;
+    }
+  }
+  .main .main-wrapper .b1 p {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    line-height: 2.5;
+  }
+  
+
+  
+
+  @media (min-width: 967px) {
+    .header {
+      position: relative;
+    }
+    .header .title {
+      width: 30%;
+    }
+    .header .nav {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+    }
+    .header .nav ul {
+      padding: 0%;
+      padding-top: 1%;
+      margin: 0%;
+    }
+  }
+  @media (max-width: 1075px) {
+    .main .main-wrapper {
+      display: block;
+    }
+    .main .main-wrapper .b2 {
+      padding-top: 5%;
+    }
+    .header .title {
+      width: 30%;
+    }
+    .header .title h1 {
+      padding: 0%;
+      margin: 0%;
+      font-size: 2em;
+    }
+    .header .nav-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 14px;
+    }
+    .logo {
+      padding: 1em 1em 1em 0;
+    }
+    .logo img {
+      width: 100px;
+    }
+  }
+  
+// lost code end ---------------------
+
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 3vw;
+    }
+
+    .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .logo {
+        img {
+            width: 15vw;
+        }
+    }
+}

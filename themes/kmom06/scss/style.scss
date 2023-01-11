@@ -1,0 +1,251 @@
+// imports fonts
+
+@import "../../shared/fontawesome/scss/fontawesome";
+$fa-font-path: "../../shared/fontawesome/webfonts";
+@import "../../shared/fontawesome/scss/brands";
+@import "../../shared/fontawesome/scss/solid";
+@import "../../shared/fontawesome/scss/regular";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+
+//imports other sass files
+
+@import "../../node_modules/normalize.css/normalize";
+@import "variables";
+
+@import "blockquotes";
+@import "code";
+@import "report";
+@import "technology";
+@import "technologies";
+@import "analysis-colors";
+@import "gallery";
+
+* {
+    color: $font-color;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: $background-color;
+    // Creates a basline for text
+    line-height: 1.4;
+}
+
+h1 {
+    // Creates a basline for text
+    font-size: 2.8em;
+    margin-bottom: 3.5rem;
+}
+
+p {
+    // Creates a basline for text
+    font-size: 1.25em;
+    margin-bottom: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+}
+
+//hides the mobile menu when toggled
+.hidden{
+    display: none;
+}
+/* changes the size of the small images */
+img.small {
+    max-width: 40%;
+}
+
+.social {
+    font-size: 60px;
+
+    a {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .fa-youtube {
+        color: $youtube;
+    }
+}
+
+.header {
+    background: $header-color;
+
+    .site-header {
+        display: flex;
+        gap: 30px;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            padding: 5%;
+        }
+    }
+}
+
+.main {
+    width: 88%;
+    margin: 0 auto;
+}
+
+
+.footer {
+    background-color: $footer-color;
+
+    p {
+        color: $antiquewhite;
+    }
+}
+
+// Lost code---------------------------------
+
+
+/* changes the size of the small images */
+img.small {
+    max-width: 40%;
+  }
+  
+  .logo {
+    padding: 1em 1em 1em 0;
+  }
+  .logo img {
+    width: 7vw;
+  }
+  .header {
+    background: #90b7eb;
+    position: relative;
+  }
+  .header .title {
+    width: 30%;
+  }
+  .header .title h1 {
+    padding: 0%;
+    margin: 0%;
+  }
+  .header .nav-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .site-header {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 150px;
+  }
+
+  .main {
+    width: 88%;
+    margin: 0 auto;
+    min-height: 700px;
+  }
+  .main h1 {
+    text-align: center;
+  }
+  .main img.small {
+    max-width: 100%;
+  }
+  .main .main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10%;
+    grid-row-gap: 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main .main-wrapper .b1 {
+    background-color: #e5f0ff;
+  }
+  .main .main-wrapper .b1 p {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    line-height: 2.5;
+  }
+  
+
+  
+
+  @media (min-width: 967px) {
+    .header {
+      background: #90b7eb;
+      position: relative;
+    }
+    .header .title {
+      width: 30%;
+    }
+    .header .nav {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+    }
+    .header .nav ul {
+      padding: 0%;
+      padding-top: 1%;
+      margin: 0%;
+    }
+  }
+  @media (max-width: 1075px) {
+    .main .main-wrapper {
+      display: block;
+    }
+    .main .main-wrapper .b2 {
+      padding-top: 5%;
+    }
+    .header .title {
+      width: 30%;
+    }
+    .header .title h1 {
+      padding: 0%;
+      margin: 0%;
+      font-size: 2em;
+    }
+    .header .nav-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 14px;
+    }
+    .logo {
+      padding: 1em 1em 1em 0;
+    }
+    .logo img {
+      width: 100px;
+    }
+  }
+  
+// lost code end ---------------------
+
+
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 3vw;
+    }
+
+    .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .logo {
+        img {
+            width: 15vw;
+        }
+    }
+}

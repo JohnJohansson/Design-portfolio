@@ -1,0 +1,107 @@
+/* report.scss */
+.landingpage {
+    display: grid;
+    gap: 1em 1em;
+    width: 25%;
+    margin: 0 auto;
+
+    h1 {
+        //makes the h1 stretch over 3 grid colums
+        grid-column: span 3;
+        justify-self: center;
+    }
+
+    .tbox {
+        .box-title {
+            background-color: $box-title;
+            height: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            border-bottom: 2px solid $black;
+            display: block;
+            width: 95%;
+            margin: 0 auto;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        min-height: 200px;
+    }
+
+    .tbox.css {
+        grid-column: span 1;
+        background-color: $css;
+    }
+
+    .tbox.html {
+        grid-column: span 2;
+        background-color: $html;
+    }
+
+    .tbox.js {
+        grid-column: span 2;
+        background-color: $js;
+    }
+
+    .tbox.php {
+        grid-column: span 1;
+        background-color: $php;
+    }
+
+    .tbox.python {
+        grid-column: span 3;
+        background-color: $python;
+    }
+
+    .tbox.git {
+        grid-column: span 1;
+        background-color: $git;
+    }
+
+    .tbox.sqlite {
+        grid-column: span 2;
+        background-color: $sqlite;
+        ;
+    }
+}
+
+@media (max-width: 1800px) {
+    .landingpage {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .landingpage {
+        width: 80%;
+    }
+}
+
+@media (max-width: 950px) {
+    .landingpage {
+        width: 80%;
+        display: block;
+
+        .tbox {
+            .box-title {
+                height: 50px;
+            }
+
+            a {
+                text-decoration: none;
+                display: block;
+                width: 95%;
+                margin: 0 auto;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: 900;
+            }
+
+            min-height: 75px;
+            margin-bottom: 5%;
+        }
+    }
+}
